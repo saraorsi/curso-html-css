@@ -10,12 +10,14 @@ Para este curso precisamos de instalar dois programas:
 - um browser que ao interpretar o código, consegue renderizar, ou mostrar em tela, o nosso website com todas as suas funcionalidades.
 
 Editor: 📥 [Visual Studio Code](https://code.visualstudio.com/)
+
 Browser: 📥 [Chrome](https://www.google.pt/intl/pt-PT/chrome/)
 
 ### Conteúdo
 
 - [Introdução ao HTML](#introdução-ao-html)
 - [Sintaxe do HTML](#sintaxe-do-html)
+- [Estrutura de um documento](#estrutura-de-um-documento)
 
 ## Introdução ao HTML
 
@@ -47,3 +49,49 @@ As tags encontram-se dentro de um sinal de menor (<) e de maior (>) e, na sua ma
 ```
 
 💡 Não podemos inventar nomes para as tags. Todas as tags que existem na versão 5 do HTML encontram-se neste link: https://www.w3schools.com/TAGS/default.ASP
+
+### Atributos
+
+Algumas tags aceitam atributos que permitem adicionar propriedades.
+
+```HTML
+<nomeTag atributo=”valor”>Conteúdo</nomeTag>
+```
+
+💡 Também não podemos inventar atributos. Cada tag recebe determinados atributos.
+
+## Estrutura de um documento
+
+[![](https://img.youtube.com/vi/uuiGQcAko0A/maxresdefault.jpg)](https://www.youtube.com/watch?v=uuiGQcAko0A)
+
+Um documento HTML começa com o que chamamos de estrutura base. Esta estrutura é compostas por:
+
+- Definição do documento (Doctype)
+- Head
+- Body
+
+```HTML
+<!DOCTYPE html><!-- definição do documento -->
+
+<html>
+   <head>
+       <!-- No `<head>` estão as informações que não são para ser vistas em tela.  -->
+   </head>
+
+   <body>
+       <!-- No `<body>` encontram-se as informações para serem apresentadas em tela. -->
+   </body>
+</html>
+```
+
+### Definição do documento (Doctype)
+
+Este elemento serve para informar o browser de que se trata de um documento com código HTML. É um elemento obrigatório e deve sempre estar na primeira linha. No passado era um código longo mas na versão 5 do HTML foi simplificado para `<!DOCTYPE html>`
+
+### Head
+
+No `<head>` estão as informações que não são para ser vistas em tela. Nele estão os metadados, links para outros arquivos, scripts e o título do documento.
+
+### Body
+
+No `<body>` encontram-se as informações para serem apresentadas em tela, que podem ser em formato de texto, imagem, vídeo, áudio ou códigos embutidos.
