@@ -7,9 +7,10 @@ Curso dedicado aos princípios básicos de duas linguagens fundamentais do desen
 Para este curso precisamos de instalar dois programas:
 
 - um editor de código, que como o nome indica, serve para escrevermos o nosso código.
-  📥 [Chrome](https://www.google.pt/intl/pt-PT/chrome/)
 - um browser que ao interpretar o código, consegue renderizar, ou mostrar em tela, o nosso website com todas as suas funcionalidades.
-  📥 [Visual Studio Code](https://code.visualstudio.com/)
+
+Editor: 📥 [Visual Studio Code](https://code.visualstudio.com/)
+Browser: 📥 [Chrome](https://www.google.pt/intl/pt-PT/chrome/)
 
 ### Conteúdo
 
@@ -40,7 +41,7 @@ Um ficheiro HTML é identificado pela extensão `.html`.
 Um documento HTML é estruturado por tags, que são os elementos que indicam como a página deve ser renderizada pelo browser.
 As tags encontram-se dentro de um sinal de menor (<) e de maior (>) e, na sua maioria, têm uma marcação de início e outra de fim. Caso não tenham conteúdo as tags têm apenas uma marcação que assinala o ínicio e o fim.
 
-```
+```HTML
 <nomeTag>Conteúdo</nomeTag> <!-- tag com conteúdo -->
 <nomeTag /> <!-- tag sem conteúdo -->
 ```
