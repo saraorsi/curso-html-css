@@ -21,8 +21,6 @@ Browser: 📥 [Chrome](https://www.google.pt/intl/pt-PT/chrome/)
 
 ## Introdução ao HTML
 
-[![](https://img.youtube.com/vi/LHLtiLr6oTM/maxresdefault.jpg)](https://www.youtube.com/watch?v=LHLtiLr6oTM)
-
 HTML (Hyper Text Markup Language) é uma linguagem de hipertexto e de marcação que descreve a estrutura de uma página web.
 
 - Por ser uma linguagem de hipertexto aceita links que permitem o acesso directo a outras páginas.
@@ -35,8 +33,6 @@ O HTML não é considerado uma linguagem de programação pois não é capaz de 
 Um ficheiro HTML é identificado pela extensão `.html`.
 
 ## Sintaxe do HTML
-
-[![](https://img.youtube.com/vi/Nc1l1oZEnqs/maxresdefault.jpg)](https://www.youtube.com/watch?v=Nc1l1oZEnqs)
 
 ### Tags
 
@@ -61,8 +57,6 @@ Algumas tags aceitam atributos que permitem adicionar propriedades.
 💡 Também não podemos inventar atributos. Cada tag recebe determinados atributos.
 
 ## Estrutura de um documento
-
-[![](https://img.youtube.com/vi/uuiGQcAko0A/maxresdefault.jpg)](https://www.youtube.com/watch?v=uuiGQcAko0A)
 
 Um documento HTML começa com o que chamamos de estrutura base. Esta estrutura é compostas por:
 
