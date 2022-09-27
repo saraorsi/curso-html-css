@@ -13,8 +13,11 @@ Para este curso precisamos de instalar dois programas:
 
 ### Conteúdo
 
-<details>
-  <summary markdown="span">Introdução ao HTML</summary>
+- [Introdução ao HTML](#introdução-ao-html)
+- [Sintaxe do HTML](#sintaxe-do-html)
+
+## Introdução ao HTML
+
 [![](https://img.youtube.com/vi/LHLtiLr6oTM/maxresdefault.jpg)](https://www.youtube.com/watch?v=LHLtiLr6oTM)
 
 HTML (Hyper Text Markup Language) é uma linguagem de hipertexto e de marcação que descreve a estrutura de uma página web.
@@ -28,4 +31,18 @@ O HTML não é considerado uma linguagem de programação pois não é capaz de 
 
 Um ficheiro HTML é identificado pela extensão `.html`.
 
-</details>
+## Sintaxe do HTML
+
+[![](https://img.youtube.com/vi/Nc1l1oZEnqs/maxresdefault.jpg)](https://www.youtube.com/watch?v=Nc1l1oZEnqs)
+
+### Tags
+
+Um documento HTML é estruturado por tags, que são os elementos que indicam como a página deve ser renderizada pelo browser.
+As tags encontram-se dentro de um sinal de menor (<) e de maior (>) e, na sua maioria, têm uma marcação de início e outra de fim. Caso não tenham conteúdo as tags têm apenas uma marcação que assinala o ínicio e o fim.
+
+```
+<nomeTag>Conteúdo</nomeTag> <!-- tag com conteúdo -->
+<nomeTag /> <!-- tag sem conteúdo -->
+```
+
+💡 Não podemos inventar nomes para as tags. Todas as tags que existem na versão 5 do HTML encontram-se neste link: https://www.w3schools.com/TAGS/default.ASP
