@@ -56,6 +56,17 @@ Algumas tags aceitam atributos que permitem adicionar propriedades.
 
 💡 Também não podemos inventar atributos. Cada tag recebe determinados atributos.
 
+### Árvore de elementos
+
+Uma página HTML é uma estrutura que se organiza em árvore sendo que as tags podem ter pais e filhos.
+
+```HTML
+<tagParent>
+    <tagChild>
+    </tagChild>
+</tagParent>
+````
+
 ## Estrutura de um documento
 
 Um documento HTML começa com o que chamamos de estrutura base. Esta estrutura é compostas por:
@@ -89,3 +100,110 @@ No `<head>` estão as informações que não são para ser vistas em tela. Nele 
 ### Body
 
 No `<body>` encontram-se as informações para serem apresentadas em tela, que podem ser em formato de texto, imagem, vídeo, áudio ou códigos embutidos.
+
+## Primeira página
+
+````
+<!DOCTYPE html>
+ 
+<html>
+   <head>
+       <title>A  minha primeira página</title> <!-- título do documento -->
+       <meta charset="utf-8"> <!-- codificação da língua -->
+   </head>
+ 
+   <body>
+       Olá mundo!
+   </body>
+</html>
+````
+
+## Tags essenciais
+
+
+### Títulos e subtítulos
+
+Os títulos e subtítulos são identificados pelas tags `<h1>` até à `<h6>`. `<h1>` o mais importante e `<h6>` menos importante.
+
+````
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<h3>Título 3</h3>
+<h4>Título 4</h4>
+<h5>Título 5</h5>
+<h6>Título 6</h6>
+````
+
+### Parágrafos
+Os parágrafos são identificados pela tag `<p>`.
+
+````
+<p>Isto é um parágrafo.</p>
+```` 
+
+### Lista não ordenada
+Uma lista não ordenada é identificada pela tag `<ul>` e cada item pela tag `<li>`. 
+Numa lista não ordenada cada item é antecedido por um símbolo bullet.
+
+````
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+````
+
+### Lista ordenada
+Uma lista ordenada é identificada pela tag `<ol>` e cada item pela tag `<li>`. 
+Numa lista ordenada cada item é numerado por ordem.
+
+````
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+````
+
+### Links
+O links são criados utilizando a tag `<a>` que recebe o atributo `href=''` que contém o URL.
+
+````
+<a href='<!-- URL -->'>Texto que aparece</a>
+````
+
+### Imagens
+
+As imagens são definidas pela tag `<img>` que recebe o atributo `src=''` que contém o URL da imagem ou o caminho relativo, caso a imagem esteja no nosso servidor.
+
+````
+<img width='500' src='<!-- URL da Imagem -->'>
+<img width='500' src='<!-- caminho relativo -->'>
+````
+
+### Tags de Formatação de Texto
+- `<b>` negrito
+- `<strong>` forte
+- `<i>` itálico
+- `<em>` enfatizado
+- `<big>` grande
+- `<small>` pequeno
+- `<sub>` subscrito
+- `<sup>` superescrito
+- `<ins>` inserido
+- `<del>` cancelado
+- `<u>` sublinhado [esta tag está desaprovado, recomenda-se utilizar os estilos]
+
+````
+<b>negrito</b>
+<strong>forte</strong>
+<i>itálico</i>
+<em>enfatizado</em>
+<big>grande</big>
+<small>pequeno</small>
+<sub>subscrito</sub>
+<sup>superescrito</sup>
+<ins>inserido</ins>
+<del>cancelado</del>
+<u>sublinhado</u>
+````
