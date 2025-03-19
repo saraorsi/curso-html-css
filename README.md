@@ -207,3 +207,212 @@ As imagens são definidas pela tag `<img>` que recebe o atributo `src=''` que co
 <del>cancelado</del>
 <u>sublinhado</u>
 ````
+
+# CSS
+
+## Introdução e sintaxe CSS
+
+
+CSS (Cascading Style Sheets) é uma extensão do HTML que permite manipular os estilos de um documento ao dizer como elementos devem aparecer no browser.
+
+Deste modo, o CSS define o design e permite que o website seja responsivo (que se adapte aos diferentes tamanhos de ecrã).
+
+Uma regra em CSS é definida por um selector e por um bloco de declarações. Cada declaração é composta por uma propriedade e por um valor atribuído.
+
+````
+selector {
+    propriedade1: valor1;
+    propriedade2: valor2;
+}
+````
+
+## Adicionar CSS
+Podemos adicionar o CSS ao HTML de três formas diferentes:
+- inline
+- interno
+- externo (preferencial)
+
+### Inline
+Directamente numa tag HTML através do atributo `style=""`.
+
+Este método não é aconselhável pois, por uma questão de organização, devemos separar o código HTML do CSS.
+
+````
+<p style="color: blue">Texto azul</p>
+````
+
+### Interno
+Através da tag `<style>` colocada no `<head>`, que permite que seja utilizada a sintaxe CSS dentro de um documento HTML.
+
+````
+<html>
+  <head>
+    <style>
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Texto azul</p>
+  </body>
+</html>
+````
+
+### Externo
+Através de um ficheiro externo com a extensão `.css`, que permite separar o código CSS do documento HTML. 
+
+O fichero CSS deve ser colocado na pasta do website e chamado pelo HTML através da tag `<link>` colocada no `<head>`. A tag `<link>` recebe o atributo `href=""`que recebe o caminho relativo do ficheiro CSS.
+
+Exemplo se o ficheiro CSS (style.css) estiver na mesma pasta que o ficheiro HTML:
+
+````
+<head>
+    <link rel="stylesheet" href="style.css">
+<head>
+````
+
+
+## Selectores Classe e ID
+
+Além das referências das tags podemos identificar os elementos de uma página pela sua "classe" ou "id".
+
+### Classes
+O selector "classe" seleciona todos os elementos HTML que têm o atributo `class=` com o valor referido antecido por um `.`. As classes identificam um grupo de elementos e um elemento pode ter mais do que uma classe.
+
+`````
+.azul {
+  background: blue;
+}
+`````
+`````
+<div class="azul">
+  Elemento com a class "azul"
+</div>
+<div class="azul">
+  Elemento com a class "azul"
+</div>
+<div class="azul">
+  Elemento com a class "azul"
+</div>
+`````
+
+### IDs
+O selector "id" é semelhante ao selector "classe" mas deve ser utilizado para seleccionar um elemento único que têm o atributo `id=` com o valor referido antecido por um `#`. Cada elemento apenas pode ter um "id". Normalmente os "ids" são utilizados para identificar a estrutura de uma página.
+
+`````
+<div id="cabecalho">
+    Cabeçalho
+</div>
+<div id="noticias">
+    Notícias
+</div>
+<div id="destaques">
+    Destaques
+</div>
+<div id="agenda">
+    Agenda
+</div>
+<div id="rodape">
+    Rodapé
+</div>
+`````
+
+## Principais Propriedades
+
+### Box-model
+- `width` define a largura da caixa;
+- `height` define a altura da caixa;
+- `margin` define o espaço à volta da caixa;
+- `padding` define o espaço entre o limite da caixa e o seu conteúdo;
+- `border` define a borda da caixa;
+- `box-sizing` define se no calculo da altura e da largura estão incluídas as bordas e o padding;
+
+### Formatacão de texto
+- `font-family` altera a fonte;
+- `font-size` define a altura da fonte;
+- `font-weight` define o peso da fonte;
+- `line-height` define a altura da linha de texto;
+- `text-align` – define o alinhamento do texto (left, right, center);
+- `text-decoration` – adiciona elementos decorativos ao texto;
+- `text-transform` – define a capitalização do texto;
+- `letter-spacing` – espaço entre os caracteres.
+
+### Posições
+A propriedade posição define o modo como um elemento é posicionado.
+
+- `position: static;` posição relativa ao flow da página (posição por defeito);
+- `position: relative;` posição relativa à sua normal posição;
+- `position: absolute;`  posição relativa ao elemento pai;
+- `position: fixed;`  posição relativa à viewport;
+- `position: sticky;` posição relativa à posição do scroll;
+
+### Pseudo-classes
+As pseudo-classes servem para atribuir estilos consoante o estado ou a posição de um elemento.
+
+- `:hover` `:focus` `:active` alteram consoante a interação do utilizador com determinado elementos;
+- `:link` `:visited` alteram consoante a navegação;
+- `:first-child` `:last-child` `:nth-child()` `:nth-last-child()` alteram consoante a posição relativa do elemento;
+- `:not()` exclui os estilos desse elemento;
+
+## Unidades
+
+### Absolutas
+
+As unidades absolutas têm sempre o mesmo tamanho independemente do tamanho da janela ou do elemento pai. São utilizadas quando os projectos não precisam de ser responsíveis, isto é, que não se adaptem a diferentes tamanhos de ecrã.
+
+#### Principais unidades absolutas
+Unidades Absolutas | Nome | Descrição 
+--- | --- | ---
+px | Pixeis | 1px = 1/96th of 1in
+pt | Points | 1pt = 1/72th of 1in
+
+### Relativas
+As unidades relativas têm tamanhos escaláveis consoante o tamanho da janela ou do elemento pai. Apesar de serem um pouco mais difíceis de ser controladas, estas unidades são muito úteis para projectos que tenham de funcionar em diferentes formatados de ecrã.
+
+#### Principais unidades relativas
+Unidades Relativas | Descrição 
+--- | ---
+% | Percentagem relativa ao valor da propriedade no elemento pai
+vw | Unidade relativa à largura da viewport. 1vw = 1/100 da largura da viewport
+vh | Unidade relativa à altura da viewport. 1vh = 1/100 da altura da viewport
+em | Unidade relativa ao tamanho da fonte do elemento
+rem | Unidade relativa ao tamanho da fonte da root (html)
+
+## Media Queries
+As media queries servem para definir diferentes regras consoante o tipo de media ao captarem as capacidade do dispositivo. 
+Assim podem identificar os seguintes valores:
+- largura e altura da viewport;
+- largura e altura do device;
+- a orientação (horizontal ou vertical);
+- a resolução.
+
+### Sintaxe das Media Queries
+````
+media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+````
+
+Valor | Descrição
+--- | ---
+all | Todos os tipos de media
+screen | Para computadores, tablets, telemóveis, etc..
+print | Para impressoras
+speech | Para leitores de ecrãs
+
+### CSS para diferentes tamanhos de ecrãs
+`````
+// ecrãs até 576px
+@media screen and (max-width: 577px) {
+ h1 {
+  font-size: 20px;
+ }
+}
+// ecrãs até 768px
+@media screen and (min-width: 769px) {
+ h1 {
+   font-size: 15px;
+ }
+}
+`````
